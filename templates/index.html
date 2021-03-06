@@ -142,26 +142,35 @@
 																			<div id="kyc-verify-wizard">
 
 																				<!-- Tab Controls -->
-																				<a class="btn btn-primary mb-4" data-bs-toggle="collapse" href="#regCollapse"
-																					role="button" aria-expanded="true" aria-controls="regCollapse">Registration
+																				<a class="btn btn-primary mb-4 p-3 border-0" aria-selected="true"
+																					data-bs-toggle="collapse" href="#personalCollapse" role="button"
+																					aria-expanded="true" aria-controls="personalCollapse"><span
+																						class="number">1.</span> Personal Info
 																				</a>
 
-																				<a class="btn btn-primary mb-4" data-bs-toggle="collapse" href="#phoneCollapse"
-																					role="button" aria-expanded="true" aria-controls="phoneCollapse">Verify
+																				<a class="btn btn-primary mb-4 p-3 border-0" aria-selected="false"
+																					data-bs-toggle="collapse" href="#phoneCollapse" role="button"
+																					aria-expanded="false" aria-controls="phoneCollapse"><span
+																						class="number">2.</span> Verify
 																					phone number
 																				</a>
 
-																				<a class="btn btn-primary mb-4" data-bs-toggle="collapse" href="#passCollapse"
-																					role="button" aria-expanded="true" aria-controls="passCollapse">Verify
+																				<a class="btn btn-primary mb-4 p-3 border-0" aria-selected="false"
+																					data-bs-toggle="collapse" href="#passCollapse" role="button"
+																					aria-expanded="false" aria-controls="passCollapse"><span
+																						class="number">3.</span> Verify
 																					password
 																				</a>
 
-																				<a class="btn btn-primary mb-4" data-bs-toggle="collapse" href="#docCollapse"
-																					role="button" aria-expanded="true" aria-controls="docCollapse">Verify document
+																				<!-- Remove class `displayNone` to display the content -->
+																				<a class="displayNone btn btn-primary mb-4 p-3 border-0" aria-selected="false"
+																					data-bs-toggle="collapse" href="#docCollapse" role="button"
+																					aria-expanded="false" aria-controls="docCollapse">
+																					<span class="number">4.</span> Verify document
 																				</a>
 
 																				<!-- Personal Info -->
-																				<section class="collapse show" id="regCollapse">
+																				<section class="collapse show" id="personalCollapse">
 																					<h3>Registration</h3>
 																					<form>
 																						<div class="row">
@@ -300,7 +309,8 @@
 																				</section>
 
 																				<!-- Document Verification -->
-																				<section class="collapse" id="docCollapse">
+																				<!-- Remove class `displayNone` to display the content -->
+																				<section class="displayNone collapse" id="docCollapse">
 																					<h3>Document Verification</h3>
 																					<div>
 																						<h5 class="font-size-14 mb-3">Upload document file for a verification</h5>
