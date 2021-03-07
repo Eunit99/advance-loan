@@ -140,35 +140,37 @@
 																	<div class="tab-content p-3 text-muted">
 																		<div class="tab-pane active" id="home" role="tabpanel">
 																			<div id="kyc-verify-wizard">
+																				<div class="tab-container mb-4">
+																					<!-- Tab Controls -->
+																					<a class="btn p-2 border-0 tab-toggler" aria-selected="true"
+																						data-bs-toggle="collapse" href="#personalCollapse" role="button"
+																						aria-expanded="true" aria-controls="personalCollapse"><span
+																							class="number">1.</span> Personal Info
+																					</a>
 
-																				<!-- Tab Controls -->
-																				<a class="btn btn-primary mb-4 p-3 border-0" aria-selected="true"
-																					data-bs-toggle="collapse" href="#personalCollapse" role="button"
-																					aria-expanded="true" aria-controls="personalCollapse"><span
-																						class="number">1.</span> Personal Info
-																				</a>
+																					<a class="btn p-2 border-0 tab-toggler" aria-selected="false"
+																						data-bs-toggle="collapse" href="#phoneCollapse" role="button"
+																						aria-expanded="false" aria-controls="phoneCollapse"><span
+																							class="number">2.</span> Verify
+																						phone number
+																					</a>
 
-																				<a class="btn btn-primary mb-4 p-3 border-0" aria-selected="false"
-																					data-bs-toggle="collapse" href="#phoneCollapse" role="button"
-																					aria-expanded="false" aria-controls="phoneCollapse"><span
-																						class="number">2.</span> Verify
-																					phone number
-																				</a>
+																					<a class="btn p-2 border-0 tab-toggler" aria-selected="false"
+																						data-bs-toggle="collapse" href="#passCollapse" role="button"
+																						aria-expanded="false" aria-controls="passCollapse"><span
+																							class="number">3.</span> Verify
+																						password
+																					</a>
 
-																				<a class="btn btn-primary mb-4 p-3 border-0" aria-selected="false"
-																					data-bs-toggle="collapse" href="#passCollapse" role="button"
-																					aria-expanded="false" aria-controls="passCollapse"><span
-																						class="number">3.</span> Verify
-																					password
-																				</a>
+																					<!-- Remove class `displayNone` to display the content -->
+																					<a class="displayNone btn p-2 border-0 tab-toggler" aria-selected="false"
+																						data-bs-toggle="collapse" href="#docCollapse" role="button"
+																						aria-expanded="false" aria-controls="docCollapse">
+																						<span class="number">4.</span> Verify document
+																					</a>
+																				</div>
 
-																				<!-- Remove class `displayNone` to display the content -->
-																				<a class="displayNone btn btn-primary mb-4 p-3 border-0" aria-selected="false"
-																					data-bs-toggle="collapse" href="#docCollapse" role="button"
-																					aria-expanded="false" aria-controls="docCollapse">
-																					<span class="number">4.</span> Verify document
-																				</a>
-
+																				
 																				<!-- Personal Info -->
 																				<section class="collapse show" id="personalCollapse">
 																					<h3>Registration</h3>
@@ -176,7 +178,8 @@
 																						<div class="row">
 																							<div class="col-lg-6">
 																								<div class="mb-3">
-																									<label for="kycfirstname-input" class="form-label">First name</label>
+																									<label for="kycfirstname-input" class="form-label">First
+																										name</label>
 																									<input type="text" class="form-control" name="firstName"
 																										id="kycfirstname-input" placeholder="Enter First name">
 																								</div>
@@ -214,7 +217,8 @@
 
 																							<div class="col-lg-6">
 																								<div class="mb-3">
-																									<label for="kycbirthdate-input" class="form-label">Enter Your Company
+																									<label for="kycbirthdate-input" class="form-label">Enter Your
+																										Company
 																										Name</label>
 																									<input type="text" class="form-control" name="companyName"
 																										id="kycbirthdate-input" placeholder="Enter Your Company Name*">
@@ -222,7 +226,8 @@
 																							</div>
 																							<div class="col-lg-6">
 																								<div class="mb-3">
-																									<label for="kycbirthdate-input" class="form-label">Enter Your Company
+																									<label for="kycbirthdate-input" class="form-label">Enter Your
+																										Company
 																										Address</label>
 																									<input type="text" class="form-control" name="companyAdress"
 																										id="kycbirthdate-input" placeholder="Enter Your Company Address*">
@@ -339,7 +344,8 @@
 																					<div class="row">
 																						<div class="col-lg-6">
 																							<div class="mb-3">
-																								<label for="kycfirstname-input" class="form-label">Phone Number</label>
+																								<label for="kycfirstname-input" class="form-label">Phone
+																									Number</label>
 																								<input type="text" name="phoneNumber" class="form-control"
 																									id="kycfirstname-input" placeholder="Enter First name">
 																							</div>
